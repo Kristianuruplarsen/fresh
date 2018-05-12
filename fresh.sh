@@ -25,6 +25,8 @@ sudo apt-get install texlive-full
 
 echo "Installing Atom (stable)"
 
+sudo apt install curl
+
 curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 
@@ -39,6 +41,14 @@ apm install hydrogen
 apm install atom-latex
 apm install pdf-view
 apm install file-icons
+
+
+echo "Installing Git-Kraken"
+
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+sudo dpkg -i --force-depends gitkraken-amd64.deb
+sudo apt-get install -f
+rm -f gitkraken-amd64.de
 
 echo "Creating /Documents/GitHub"
 
