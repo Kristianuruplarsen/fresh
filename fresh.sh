@@ -2,8 +2,6 @@
 
 sudo apt-get update
 
-echo "Commencing ... "
-
 
 echo "Installing python 3.6 through miniconda"
 
@@ -19,7 +17,7 @@ pip install geopandas
 pip install scikit-learn
 pip install networkx
 pip install matplotlib
-pip install seaborn 
+pip install seaborn
 
 
 echo "Installing TeX-Live"
@@ -44,15 +42,3 @@ apm install hydrogen
 apm install atom-latex
 apm install pdf-view
 apm install file-icons
-
-
-echo "Installing Git-Kraken"
-
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo dpkg -i --force-depends gitkraken-amd64.deb
-sudo apt-get install -f
-rm -f gitkraken-amd64.de
-
-echo "Creating /Documents/GitHub"
-
-mkdir /Documents/github
