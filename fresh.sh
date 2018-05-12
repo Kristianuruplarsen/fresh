@@ -17,6 +17,9 @@ pip install numpy
 pip install pandas
 pip install geopandas
 pip install scikit-learn
+pip install networkx
+pip install matplotlib
+pip install seaborn 
 
 
 echo "Installing TeX-Live"
