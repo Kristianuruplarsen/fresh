@@ -33,7 +33,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 
 
 sudo apt-get update
-sudo apt-get install atom
+yes | sudo apt-get install atom
 
 
 echo "    Installing core atom packages"
