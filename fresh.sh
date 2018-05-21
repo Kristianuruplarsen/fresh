@@ -48,6 +48,6 @@ echo "Installing GitKraken"
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 dpkg -i gitkraken-amd64.deb
 
-apt-get install libgnome-keyring-common libgnome-keyring-dev
+yes y | apt-get install libgnome-keyring-common libgnome-keyring-dev
 
 
