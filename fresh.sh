@@ -26,7 +26,7 @@ yes y | sudo apt-get install texlive-full
 
 echo "Installing Atom (stable)"
 
-sudo apt install curl
+yes y | sudo apt install curl
 
 curl -L https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
