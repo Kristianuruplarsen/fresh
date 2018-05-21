@@ -22,7 +22,7 @@ pip install seaborn
 
 echo "Installing TeX-Live"
 
-sudo apt-get install texlive-full
+yes y | sudo apt-get install texlive-full
 
 echo "Installing Atom (stable)"
 
